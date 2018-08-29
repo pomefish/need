@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SharePopViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AdvertisingWindow" translatesAutoresizingMaskIntoConstraints="NO" id="stB-Cc-wVK">
+                    <rect key="frame" x="38" y="67" width="300" height="424"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="300" id="66X-OJ-S7a"/>
+                        <constraint firstAttribute="height" constant="424" id="egw-DT-YD0"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G5J-Ty-wSc">
+                    <rect key="frame" x="98" y="369" width="179" height="113"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="113" id="WHH-n5-Alu"/>
+                        <constraint firstAttribute="width" constant="179" id="eZ4-0m-Zrc"/>
+                    </constraints>
+                    <connections>
+                        <action selector="shareBtn:" destination="-1" eventType="touchUpInside" id="mQC-Yf-32g"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IZs-gG-Nvd">
+                    <rect key="frame" x="165.5" y="533" width="45" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="45" id="8IG-P7-EsJ"/>
+                        <constraint firstAttribute="height" constant="45" id="TEx-4A-lSW"/>
+                    </constraints>
+                    <state key="normal" title="Button" image="invitation_delete"/>
+                    <connections>
+                        <action selector="closeBtn:" destination="-1" eventType="touchUpInside" id="nFD-gS-Nl3"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="IZs-gG-Nvd" firstAttribute="top" secondItem="stB-Cc-wVK" secondAttribute="bottom" constant="42" id="3Xg-iW-VaZ"/>
+                <constraint firstItem="stB-Cc-wVK" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" constant="0.5" id="4uI-du-UBu"/>
+                <constraint firstItem="G5J-Ty-wSc" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Gvv-Bu-Rke"/>
+                <constraint firstItem="IZs-gG-Nvd" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="dXk-RG-OsF"/>
+                <constraint firstItem="stB-Cc-wVK" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="67" id="r5V-dC-b5b"/>
+                <constraint firstItem="G5J-Ty-wSc" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="369" id="ytd-ca-XX1"/>
+            </constraints>
+            <point key="canvasLocation" x="33.5" y="109.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="AdvertisingWindow" width="800" height="1100"/>
+        <image name="invitation_delete" width="108" height="105"/>
+    </resources>
+</document>

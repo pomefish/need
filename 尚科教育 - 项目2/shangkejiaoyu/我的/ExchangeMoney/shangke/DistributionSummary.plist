@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>shangkejiaoyu.ipa</key>
+	<array>
+		<dict>
+			<key>architectures</key>
+			<array>
+				<string>armv7</string>
+				<string>arm64</string>
+			</array>
+			<key>certificate</key>
+			<dict>
+				<key>SHA1</key>
+				<string>191F814F1028B57967ED63632503F65D7978223A</string>
+				<key>dateExpires</key>
+				<string>2018/7/24</string>
+				<key>type</key>
+				<string>iOS Distribution</string>
+			</dict>
+			<key>embeddedBinaries</key>
+			<array>
+				<dict>
+					<key>architectures</key>
+					<array>
+						<string>armv7</string>
+						<string>arm64</string>
+					</array>
+					<key>certificate</key>
+					<dict>
+						<key>SHA1</key>
+						<string>191F814F1028B57967ED63632503F65D7978223A</string>
+						<key>dateExpires</key>
+						<string>2018/7/24</string>
+						<key>type</key>
+						<string>iOS Distribution</string>
+					</dict>
+					<key>name</key>
+					<string>Hyphenate.framework</string>
+					<key>team</key>
+					<dict>
+						<key>id</key>
+						<string>M55YVMCZEL</string>
+						<key>name</key>
+						<string>yajian Gu</string>
+					</dict>
+				</dict>
+			</array>
+			<key>entitlements</key>
+			<dict>
+				<key>application-identifier</key>
+				<string>M55YVMCZEL.com.shangkeEduApp</string>
+				<key>aps-environment</key>
+				<string>production</string>
+				<key>com.apple.developer.in-app-payments</key>
+				<array>
+					<string>merchant.shangkeEduPay</string>
+				</array>
+				<key>com.apple.developer.team-identifier</key>
+				<string>M55YVMCZEL</string>
+				<key>get-task-allow</key>
+				<false/>
+			</dict>
+			<key>name</key>
+			<string>shangkejiaoyu.app</string>
+			<key>profile</key>
+			<dict>
+				<key>UUID</key>
+				<string>cf829b1d-d065-4994-96ed-aeeca70bd16a</string>
+				<key>name</key>
+				<string>iOS Team Ad Hoc Provisioning Profile: com.shangkeEduApp</string>
+			</dict>
+			<key>team</key>
+			<dict>
+				<key>id</key>
+				<string>M55YVMCZEL</string>
+				<key>name</key>
+				<string>yajian Gu</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>

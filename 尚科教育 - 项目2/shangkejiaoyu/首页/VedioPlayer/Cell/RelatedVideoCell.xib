@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="KGk-i7-Jjw" customClass="RelatedVideoCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="99"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="saU-Mu-AEB">
+                        <rect key="frame" x="0.0" y="-1" width="320" height="95.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="食品营养基础：动植物性，油脂是数数数据库很快就据库很快就据库很快就的营养价值" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tu0-Xt-eHB">
+                                <rect key="frame" x="10" y="10" width="190" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="DSe-mq-A4T"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.034561389589999998" green="0.034561389589999998" blue="0.034561389589999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="生物需要能量才能维持生命运动，人体需要的能量来之食物中的产能营养素" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jHY-N9-DUC">
+                                <rect key="frame" x="10" y="55" width="190" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="fO9-1b-VnI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.61169630289999999" green="0.61180418729999997" blue="0.61168956760000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2017-06-14 15：52" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ige-Zk-Pka">
+                                <rect key="frame" x="10" y="97" width="214" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="d61-Wc-zl1"/>
+                                    <constraint firstAttribute="width" constant="214" id="gap-Tu-Qkc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.76070064309999996" green="0.76083260770000005" blue="0.76069229839999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="load" translatesAutoresizingMaskIntoConstraints="NO" id="o7Q-jG-iFp">
+                                <rect key="frame" x="208" y="10" width="103" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="103" id="jsK-qb-sSf"/>
+                                    <constraint firstAttribute="height" constant="70" id="uIg-Pu-dmf"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Tu0-Xt-eHB" firstAttribute="leading" secondItem="saU-Mu-AEB" secondAttribute="leading" constant="10" id="32A-uJ-aUD"/>
+                            <constraint firstItem="o7Q-jG-iFp" firstAttribute="top" secondItem="saU-Mu-AEB" secondAttribute="top" constant="10" id="60Z-gW-dT2"/>
+                            <constraint firstItem="Ige-Zk-Pka" firstAttribute="top" secondItem="Tu0-Xt-eHB" secondAttribute="bottom" constant="41" id="FVK-MT-nKl"/>
+                            <constraint firstItem="jHY-N9-DUC" firstAttribute="top" secondItem="saU-Mu-AEB" secondAttribute="top" constant="55" id="V4z-9R-wVI"/>
+                            <constraint firstItem="Tu0-Xt-eHB" firstAttribute="top" secondItem="saU-Mu-AEB" secondAttribute="top" constant="10" id="VaZ-yb-01p"/>
+                            <constraint firstItem="jHY-N9-DUC" firstAttribute="leading" secondItem="saU-Mu-AEB" secondAttribute="leading" constant="10" id="dXQ-mS-nMt"/>
+                            <constraint firstItem="o7Q-jG-iFp" firstAttribute="leading" secondItem="jHY-N9-DUC" secondAttribute="trailing" constant="8" id="qkc-4M-hae"/>
+                            <constraint firstItem="Ige-Zk-Pka" firstAttribute="leading" secondItem="saU-Mu-AEB" secondAttribute="leading" constant="10" id="vCZ-LE-gLa"/>
+                            <constraint firstItem="o7Q-jG-iFp" firstAttribute="leading" secondItem="Tu0-Xt-eHB" secondAttribute="trailing" constant="8" id="yd7-fT-0FL"/>
+                            <constraint firstAttribute="trailing" secondItem="o7Q-jG-iFp" secondAttribute="trailing" constant="9" id="yyT-Q6-wgK"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="saU-Mu-AEB" secondAttribute="trailing" id="8Fv-e0-sSp"/>
+                    <constraint firstAttribute="bottom" secondItem="saU-Mu-AEB" secondAttribute="bottom" constant="5" id="pz3-L2-92n"/>
+                    <constraint firstItem="saU-Mu-AEB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="qvW-kf-Qog"/>
+                    <constraint firstItem="saU-Mu-AEB" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" constant="-3" id="tWl-es-yyw"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="describeLabel" destination="jHY-N9-DUC" id="7UR-3O-xFB"/>
+                <outlet property="timeLabel" destination="Ige-Zk-Pka" id="tml-Hm-B0u"/>
+                <outlet property="titleLabel" destination="Tu0-Xt-eHB" id="SLu-tc-SOi"/>
+                <outlet property="videoImage" destination="o7Q-jG-iFp" id="Y0l-Nv-FFw"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="113.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="load" width="204" height="116"/>
+    </resources>
+</document>

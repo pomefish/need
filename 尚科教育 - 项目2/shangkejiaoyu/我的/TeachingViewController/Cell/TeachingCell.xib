@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="KGk-i7-Jjw" customClass="TeachingCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="120"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="119.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oU4-Wb-gaw">
+                        <rect key="frame" x="15" y="10" width="290" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="O3c-Hs-j6t"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="浏览" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gxd-uq-OEl">
+                        <rect key="frame" x="15" y="75" width="174" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="A5d-MZ-I0c"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.458770751953125" green="0.45885384082794189" blue="0.45876550674438477" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label时的发生的撒的发斯蒂芬水电费水电费水电费撒的发生地方撒东方闪电法师打发斯蒂芬" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HWI-kY-rpb">
+                        <rect key="frame" x="15" y="35" width="290" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="35" id="vqE-bA-mPf"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.47062617540359497" green="0.46660828590393066" blue="0.47064357995986938" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Gxd-uq-OEl" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="7" id="0Wj-td-hJU"/>
+                    <constraint firstItem="Gxd-uq-OEl" firstAttribute="top" secondItem="HWI-kY-rpb" secondAttribute="bottom" constant="5" id="Ajg-Xu-7NK"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="oU4-Wb-gaw" secondAttribute="trailing" constant="7" id="CAI-u1-2uS"/>
+                    <constraint firstItem="oU4-Wb-gaw" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="7" id="Ogv-Ar-OAZ"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="HWI-kY-rpb" secondAttribute="trailing" constant="7" id="UJ4-cy-f9e"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Gxd-uq-OEl" secondAttribute="trailing" constant="123" id="a8I-ah-uLD"/>
+                    <constraint firstItem="HWI-kY-rpb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="7" id="mVd-Bz-tfe"/>
+                    <constraint firstItem="HWI-kY-rpb" firstAttribute="top" secondItem="oU4-Wb-gaw" secondAttribute="bottom" constant="5" id="pQy-So-KFP"/>
+                    <constraint firstItem="oU4-Wb-gaw" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="2" id="tiu-Te-Wo0"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="browseLabel" destination="Gxd-uq-OEl" id="Svj-hy-6wk"/>
+                <outlet property="detailsLabel" destination="HWI-kY-rpb" id="N1k-cK-sWL"/>
+                <outlet property="titleLabel" destination="oU4-Wb-gaw" id="XmN-Dq-zr7"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

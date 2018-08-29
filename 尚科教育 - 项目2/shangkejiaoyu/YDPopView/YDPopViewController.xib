@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="YDPopViewController">
+            <connections>
+                <outlet property="bgImage" destination="2lz-rb-GDL" id="2Fa-5z-VmH"/>
+                <outlet property="closeButton" destination="GSG-yh-1or" id="G9M-hK-jLt"/>
+                <outlet property="mainButton" destination="Ada-cd-2yg" id="hPn-uU-twI"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2lz-rb-GDL">
+                    <rect key="frame" x="63" y="120" width="250" height="320"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ada-cd-2yg">
+                    <rect key="frame" x="40" y="120" width="298" height="320"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="320" id="acx-Uh-TQ3"/>
+                    </constraints>
+                    <connections>
+                        <action selector="mainButtonClick:" destination="-1" eventType="touchUpInside" id="Wk0-7A-4sY"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GSG-yh-1or">
+                    <rect key="frame" x="173" y="490" width="30" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="30" id="3Bb-nV-PnM"/>
+                        <constraint firstAttribute="height" constant="30" id="BKg-l1-zJu"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="invitation_delete"/>
+                    <connections>
+                        <action selector="closeButtonClick:" destination="-1" eventType="touchUpInside" id="AQA-zf-34X"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.86274509799999999" green="0.86274509799999999" blue="0.86274509799999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="2lz-rb-GDL" secondAttribute="trailing" constant="62" id="7To-ph-yBk"/>
+                <constraint firstItem="GSG-yh-1or" firstAttribute="top" secondItem="2lz-rb-GDL" secondAttribute="bottom" constant="50" id="812-2z-qya"/>
+                <constraint firstItem="2lz-rb-GDL" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="63" id="9Lj-60-OkQ"/>
+                <constraint firstItem="GSG-yh-1or" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="173" id="HR9-7y-cSM"/>
+                <constraint firstItem="2lz-rb-GDL" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="120" id="I3z-St-Ohe"/>
+                <constraint firstItem="Ada-cd-2yg" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="40" id="ITl-uv-r7a"/>
+                <constraint firstAttribute="trailing" secondItem="Ada-cd-2yg" secondAttribute="trailing" constant="37" id="SkW-J1-SaT"/>
+                <constraint firstAttribute="trailing" secondItem="GSG-yh-1or" secondAttribute="trailing" constant="172" id="TKu-c7-v0W"/>
+                <constraint firstItem="Ada-cd-2yg" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="120" id="eI0-oS-7lr"/>
+                <constraint firstAttribute="bottom" secondItem="2lz-rb-GDL" secondAttribute="bottom" constant="227" id="mkh-DE-e2f"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="24.5" y="52.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="invitation_delete" width="108" height="105"/>
+    </resources>
+</document>

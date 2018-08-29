@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="LSLHotView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="65"/>
+            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wya-GO-oHI">
+                    <rect key="frame" x="8" y="8" width="42" height="0.0"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="42" id="lla-Hs-AbT"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="哈哈" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J96-r0-7VB">
+                    <rect key="frame" x="8" y="13" width="42" height="17"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="42" id="mSq-fL-eaf"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dyF-M5-3L9">
+                    <rect key="frame" x="58" y="8" width="309" height="0.0"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0zj-0Q-BLk">
+                    <rect key="frame" x="58" y="13" width="309" height="0.0"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="0zj-0Q-BLk" secondAttribute="trailing" constant="8" id="1yW-fA-oDt"/>
+                <constraint firstItem="J96-r0-7VB" firstAttribute="top" secondItem="wya-GO-oHI" secondAttribute="bottom" constant="5" id="8CY-9m-vKy"/>
+                <constraint firstItem="0zj-0Q-BLk" firstAttribute="top" secondItem="dyF-M5-3L9" secondAttribute="bottom" constant="5" id="Cfa-CD-5Ij"/>
+                <constraint firstItem="0zj-0Q-BLk" firstAttribute="leading" secondItem="J96-r0-7VB" secondAttribute="trailing" constant="8" id="D6k-xX-Rfg"/>
+                <constraint firstItem="wya-GO-oHI" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="DSf-Hh-UbY"/>
+                <constraint firstItem="dyF-M5-3L9" firstAttribute="leading" secondItem="wya-GO-oHI" secondAttribute="trailing" constant="8" id="H4T-uL-mTs"/>
+                <constraint firstItem="dyF-M5-3L9" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="LD7-5q-fDX"/>
+                <constraint firstItem="J96-r0-7VB" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="aFB-Up-dt9"/>
+                <constraint firstItem="wya-GO-oHI" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="nsO-Zn-1QE"/>
+                <constraint firstAttribute="trailing" secondItem="dyF-M5-3L9" secondAttribute="trailing" constant="8" id="v8J-Kz-lPZ"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="FirstLabel" destination="dyF-M5-3L9" id="8ha-oq-qMJ"/>
+                <outlet property="MarkLabelOne" destination="wya-GO-oHI" id="BCc-sz-Rfs"/>
+                <outlet property="MarlSeconrLabel" destination="J96-r0-7VB" id="XkB-Vb-mzM"/>
+                <outlet property="SecondLabel" destination="0zj-0Q-BLk" id="9m5-Wz-3l0"/>
+            </connections>
+            <point key="canvasLocation" x="-3" y="-201"/>
+        </view>
+    </objects>
+</document>
